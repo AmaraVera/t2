@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo de Imagem de Fundo</title>
+<link rel="stylesheet" href="t23.css">
+<style>
+    #example1 {
+  background-image: url(Images/Cat.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+}
+    body {
+        background-image: url('Images/Cat.jpg');
+        background-size: cover; /* Para cobrir todo o fundo */
+        background-position: center; /* Para centralizar a imagem */
+        /* Outros estilos opcionais */
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    /* Estilos adicionais para o conteúdo */
+    .conteudo {
+        background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo do conteúdo */
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 50px auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    }
+</style>
+</head>
+<body>
+    <div class="background-bottom">
+        <div class="background-overlay"></div>
+    </div>
+
+    <div class="background-next"></div>
+    <div class="overlay"></div>
+    <div class="conteudo-a-frente">
+<div class="conteudo">
+    <h1>Conteúdo Aqui</h1>
+    <p> exemplo de página com uma imagem de fundo.</p>
+</div>
+</div>
+
+</body>
+</html>
