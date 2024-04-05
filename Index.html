@@ -1,49 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exemplo de Imagem de Fundo</title>
-<link rel="stylesheet" href="t23.css">
-<style>
-    #example1 {
-  background-image: url(Images/Cat.jpg);
-  background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat;
-}
-    body {
-        background-image: url('Images/Cat.jpg');
-        background-size: cover; /* Para cobrir todo o fundo */
-        background-position: center; /* Para centralizar a imagem */
-        /* Outros estilos opcionais */
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-    }
-    /* Estilos adicionais para o conteúdo */
-    .conteudo {
-        background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo do conteúdo */
-        padding: 20px;
-        border-radius: 10px;
-        max-width: 600px;
-        margin: 50px auto;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         menu{ 
+           position: fixed;
+           top: 20px;
+           right: 20px;
+           background-color: cadetblue;
+           padding: 10px;
+           border: 5px solid #2aeb04;
+           border-radius:5px;
+           box-shadow: 02px 5px rgba (0,0,0,0.1);
+           transition: background-color 0.4;
+          }
+          menu:hover { background-color: #e40c0c ;
+                       color: darkolivegreen;}
+          nav ul{  
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li{  
+            display: inline-block;
+            margin-right: 0;}
+           
+            nav ul li a
+            { text-decoration: none;
+                color: rgb(255, 217, 91);  
+            }
+           nav ul li a:hover{ color: rgb(5, 92, 34); }
+    </style>
 </head>
 <body>
-    <div class="background-bottom">
-        <div class="background-overlay"></div>
+    <header> 
+        <h1> MY WEB</h1>
+    </header>
+    <nav>
+        <div >
+          <ul>
+        <li> <a href="index.html" target="_blank"> Home</a></li>
+        <li> <a href="2.html" target="_blank"> Sobre</a></li>
+        <li> <a href="3.html" target="_blank"> Portfólio</a></li>
+        <li> <a href="4.html" target="_blank">Novidades </a></li>
+        <li> <a href="5.html" target="_blank"> Contato</a></li>
+         </ul>
+        </div>
+    </nav>
+    <div class=" container">
+       <h2> Um Pouco sobre mim</h2>
+       <p> Andamento dos projetos</p>
+
     </div>
-
-    <div class="background-next"></div>
-    <div class="overlay"></div>
-    <div class="conteudo-a-frente">
-<div class="conteudo">
-    <h1>Conteúdo Aqui</h1>
-    <p> exemplo de página com uma imagem de fundo.</p>
-</div>
-</div>
-
 </body>
 </html>
